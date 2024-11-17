@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.newsletter-container {
+    background-color: #1e1e1e; /* Darker card background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.newsletter-container h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+}
+
+.email-input {
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    background-color: #2a2a2a; /* Dark input background */
+    color: #ffffff; /* White text */
+    transition: border-color 0.3s, background-color 0.3s;
+    flex: 1; /* Allow input to take available space */
+}
+
+.email-input:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    background-color: #333; /* Slightly lighter background */
+    outline: none;
+}
+
+.submit-button {
+    padding: 15px 20px;
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
